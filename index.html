@@ -9,34 +9,61 @@
     <link rel="Stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+    <br>
+    <div class="container">
     <div class="jumbotron">
-        <h1>Arrival Schedule at Austin Hypothetical</h1>
-        <h3>Welcome to the landing of imagination!</h3>
+        <h1 class="display-4">Arrival Schedule at Austin Hypothetical</h1>
+        <hr class="my-4">
+        <p class="lead">Welcome to the landing of imagination!</p>
     </div>
-    <div class="container">
-        <table></table>
+    <div class="container borderMain">
+        <h4 class="alert alert-success beMyColor">Current Train Schedule</h4>
+        <table class="table" id="trainSchedule">
+            <tr class="alert alert-success">
+                <td>Train Name</td>
+                <td>Destination</td>
+                <td>Frequency (Min)</td>
+                <td>Train Start Time</td>
+                <td>Minutes Away</td>
+            </tr>
+        </table>
     </div>
-    <div class="container">
-        <form>
-            Train Time
+    <br>
+    <div class="container borderSecondary">
+        <h4 class="alert alert-warning colorThis">Add Train</h4>
+        <form class="addTrain alert alert-warning">
+            Train Name
             <br>
-            <input type="text" name="trainTime">
+            <input type="text" name="trainName" id="TN">
             <br><br>
             Destination
             <br>
-            <input type="text" name="destination">
+            <input type="text" name="destination" id="dest">
             <br><br>
             First Train Time (HH:MM-Military Time)
             <br>
-            <input type="text" name="firstTrainTime">
+            <input type="text" name="firstTrainTime" id="FTT">
             <br><br>
             Frequency (MM)
             <br>
-            <input type="text" name="frequency">
+            <input type="text" name="frequency" id="freq">
             <br><br>
-            <submit>Submit</submit>
+            <input class="btn btn-warning" type="submit" value="submit" id="submit">
         </form>
     </div>
+    <section class="container borderTriangle">
+        <div class="gifContainer">
+        <img class="gifs" src="assets/images/miya.gif" alt="Miyazaki Train">
+        <img class="gifs" src="assets/images/miya2.gif" alt-"Miyazaki Train 2">
+        </div>
+    </section>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>

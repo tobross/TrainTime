@@ -1,0 +1,41 @@
+.borderMain {
+    border: solid 2px #dff0d8;
+    border-radius: 8px;
+}
+.borderSecondary {
+    border: solid 2px #fff3cd;
+    border-radius: 8px;
+    width: 49%;
+    float:left;
+}
+.borderTriangle {
+    float: right;
+    border: solid 2px #fff3cd;
+    border-radius: 8px;
+    width: 49%;
+   
+}
+.gifs {
+    margin-top: 5px;
+    width: 103%;
+    height: 50%;
+    margin-bottom: 5px;
+    margin-left: -5px;
+}
+body {
+    background: #3f5758;
+}
+tr:nth-child(even) {
+    background-color: #93ac8b;
+}
+tr:nth-child(odd) {
+    background-color: #dff0d8;
+}
+.beMyColor {
+    background: #28a745;
+    color: #f9fad7;
+}
+.colorThis {
+    background: #f0ad4e;
+    color: #f9fad7;
+}
